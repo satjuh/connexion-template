@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: A simple api template 
+  version: 0.1.0
+servers:
+  - url: /
+paths:
+  /version:
+    get:
+      operationId: api.get_version
+      tags:
+        - version
+      description: Get the version of the rest api
+      responses:
+        '200':
+          description: OK
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: "1.0"
