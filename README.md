@@ -8,9 +8,12 @@ A simple template for a connexion app
 # Create a python virtual env
 python3 -m venv .venv
 
-source activate .venv/bin/activate
+source .venv/bin/activate
 
 pip install -r requirements.txt
 
-python3 api.yaml
+python3 api.py
 ```
+
+The swagger ui should be available on 127.0.0.1:8080/ui \
+And the api available on 127.0.0.1:8080/<endpoint>. For example 127.0.0.1:8080/version
